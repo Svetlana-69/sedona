@@ -1,0 +1,37 @@
+@media (min-width: $screen-mobile) {
+  .nav-menu {
+    height: auto;
+    position: static;
+    &__list {
+      flex-direction: row;
+    }
+    &__item {
+      background-color: transparent;
+      width: 20%;
+      font-size: 14px;
+      border: none;
+      a {
+        width: auto;
+        height: auto;
+        color: $black;
+        &:hover {
+          background-color: $white;
+          color: $primary-70;
+        }
+      }
+      &:nth-last-child(1) {
+        box-shadow: none;
+        color: yellow;
+      }
+      &:nth-child(3) {
+        margin-left: auto;
+
+      }
+    }
+
+
+  }
+  .menu__btn {
+    display: none;
+  }
+}

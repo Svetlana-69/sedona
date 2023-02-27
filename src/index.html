@@ -2,8 +2,12 @@
 <html lang="en">
 @@include('components/AppHead.html', { "title": "Главная" })
 <body>
+    @@include('components/icons.html')
     @@include('components/AppHeader.html')
-    <main>MAIN</main>
+
+    <main>
+        @@include('components/content/title.html')
+    </main>
     @@include('components/AppFooter.html')
 </body>
 <script src="script/app.min.js"></script>

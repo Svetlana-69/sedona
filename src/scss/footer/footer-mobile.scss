@@ -1,0 +1,46 @@
+.app-footer {
+    gap: 38px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+.social {
+  display: flex;
+  text-align: center;
+  gap: 5px;
+  &__item__link {
+    color: black;
+    background-color: $primary-30;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+  }
+  &__item__link:hover {
+    background-color: $primary-70;
+  }
+  &__item__link:active {
+    color: $white-30;
+  }
+}
+
+.logo-small {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: $black;
+}
+.hashtag {
+  text-transform: uppercase;
+  font-size: 21px;
+  text-align: center;
+  align-items: center;
+}
+.logo-small__icon {
+  margin-left: 10px;
+}
