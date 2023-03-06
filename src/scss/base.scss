@@ -1,4 +1,4 @@
-body {
+body, h1, h2, p, {
   font-family: PTSans;
   margin: 0;
   padding: 0;
@@ -13,5 +13,10 @@ ul {
 }
 a {
   text-decoration: none;
-
+}
+button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
 }

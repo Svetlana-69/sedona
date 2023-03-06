@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="advantage-item">
+    @@if ( context.icon) {
+    <div class="advantage-item__icon-wrapper">
+        <svg width="68" height="68" class="advantage-item__icon">
+            <use xlink:href=@@icon></use>
+        </svg>
+    </div>
+
+    }
+    <div class="advantage-item__content">
+        <h2 class="h">@@title</h2>
+        @@if ( context.number) {
+        <span class="">— №@@number —</span>
+        }
+        <p class="">@@description</p>
+    </div>
+
+</div>
+

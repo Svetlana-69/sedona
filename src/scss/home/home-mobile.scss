@@ -1,0 +1,153 @@
+.home-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+
+}
+.photo {
+
+  .advantage-item {
+    padding: 0 30px;
+    min-height: 190px;
+    background: $primary-30;
+    color: $white;
+  }
+  .image-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .bridge {
+    object-fit: cover;
+    height: 256px;
+    width: 100%;
+  }
+}
+
+.back {
+  position: relative;
+  background: white;
+  margin-bottom: 21px;
+  .advantage-item {
+    padding: 45px 30px 0 30px;
+    font-size: 12px;
+
+  }
+  .strip {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+  }
+  .intro {
+    width: 100%;
+    left: 0;
+    top: -55px;
+    position: absolute;
+    object-fit: cover;
+    height: 55px;
+  }
+}
+.title {
+  background-image: url("../../files/img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  object-fit: cover;
+
+  h1 {
+    font-size: 73px;
+    margin: 0;
+    color: $white;
+
+  }
+  h2 {
+    margin: 0;
+    padding-top: 53px;
+    padding-bottom: 5px;
+    font-family: Cambria, serif;
+    color: $primary-30;
+    font-size: 32px;
+  }
+  h1, h2 {
+    text-transform: uppercase;
+  }
+  .depiction {
+    display: flex;
+    font-family: Mynerve;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+   text-align: center;
+    color: $white;
+  }
+  .discription {
+    font-family: Mynerve;
+    font-size: 18px;
+    color: $black-10;
+  }
+
+
+ }
+.excellence {
+  padding: 0 20px;
+  background: $primary-10 ;
+  .advantage-item {
+    padding: 18px;
+
+  }
+  .advantage-item:not(:last-child) {
+    border-bottom: 1px solid $black-30;
+  }
+}
+.search {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px 25px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 460px;
+
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #5496bd;
+  }
+}
+.advertising {
+  .advantage-item {
+    padding: 24px 20px;
+  }
+  .advantage-item__content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+}

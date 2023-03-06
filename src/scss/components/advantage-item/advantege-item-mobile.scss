@@ -1,0 +1,36 @@
+.advantage-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 18px;
+  h2 {
+    font-size: 18px;
+  }
+  p, span, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    gap: 18px;
+
+  }
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &__icon {
+    position: absolute;
+    transform: scale(0.5);
+  }
+}

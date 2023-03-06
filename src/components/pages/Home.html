@@ -1,10 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="home-page">
+    <div class="title">
+        <h2>welcome</h2>
+        <span class="discription">—  to the gorgeous  —</span>
+        <h1 class="main-title">sedona</h1>
+        <p class="depiction">"Because the grand canyon fabulous"</p>
+    </div>
+    <section class="back">
+        <div class="image-wrapper">
+            <img class="intro" src="../../files/img/intro-triangle.png"/>
+        </div>
+
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "title": "СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!",
+        "description": "Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!"
+        })
+        <img class="strip" src="../../files/img/white.png"/>
+    </section>
+
+   <section class="photo">
+        @@include(
+            '../app-components/AdvantageItem.html',
+            {
+                "title": "настоящий городок",
+                "number": "1",
+                "description": "СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ"
+            })
+       <div class="image-wrapper">
+           <img class="bridge" src=" ../../files/img/photo-city@1x.jpg"/>
+       </div>
+   </section>
+    <section class="advertising">
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "icon": "#house",
+        "title": "жилье",
+        "description": "Рекомендуем пожить в настоящем мотеле, все как в кино!"
+        })
+
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "icon": "#burger",
+        "title": "еда",
+        "description": "Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!"
+        })
+
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "icon": "#gift",
+        "title": "Сувениры",
+        "description": "Не только китайского, но и местного производства!"
+        })
+    </section>
+    <section class="photo photo-last">
+        @@include(
+            '../app-components/AdvantageItem.html',
+            {
+                "title": "ТАМ ЕСТЬ Мост дьявола",
+                "number": "2",
+                "description": "Да, по нему можно пройти! Если вы осмелитесь, конечно"
+            })
+        <div class="image-wrapper">
+            <img class="bridge" src="../../files/img/canyon.png"/>
+        </div>
+    </section>
+
+    <section class="excellence">
+
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "title": "НЕБОЛЬШАЯ ПЛОЩАДЬ",
+        "number": "3",
+        "description": "ВСЕ интересные места находятся очень близко"
+        })
+
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "title": "КРАСИВАЯ ДОРОГА",
+        "number": "4",
+        "description": "ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!"
+        })
+
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "title": " МАЛО ТУРИСТОВ",
+        "number": "5",
+        "description": "Большинство едет в гранд каньон и толпится там"
+        })
+    </section>
+    <div class="search">
+        <h2 class="info">Заинтересовались?</h2>
+        <p class="">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="">
+            <a href="#">найти гостиницу</a>
+        </button>
+    </div>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381008.20225497!2d-114.18018677229907!3d34.15233284700927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2skz!4v1678109823590!5m2!1sru!2skz" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+
+</div>

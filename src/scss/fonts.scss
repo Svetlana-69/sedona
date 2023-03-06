@@ -1,8 +1,22 @@
 @font-face {
+	font-family: Mynerve;
+	font-display: swap;
+	src: url("../fonts/Mynerve-Regular.woff2") format("woff2"), url("../fonts/Mynerve-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
 	font-family: PTSans;
 	font-display: swap;
 	src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
 	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: PTSans;
+	font-display: swap;
+	src: url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
@@ -16,13 +30,6 @@
 	font-family: PTSans;
 	font-display: swap;
 	src: url("../fonts/PTSans-Italic.woff2") format("woff2"), url("../fonts/PTSans-Italic.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: PTSans;
-	font-display: swap;
-	src: url("../fonts/PTSans-Regular.woff2") format("woff2"), url("../fonts/PTSans-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
