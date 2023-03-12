@@ -11,22 +11,7 @@
   display: flex;
   text-align: center;
   gap: 5px;
-  &__item__link {
-    color: black;
-    background-color: $primary-30;
-    height: 45px;
-    width: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $white;
-  }
-  &__item__link:hover {
-    background-color: $primary-70;
-  }
-  &__item__link:active {
-    color: $white-30;
-  }
+
 }
 
 .logo-small {

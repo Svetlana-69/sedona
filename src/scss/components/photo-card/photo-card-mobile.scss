@@ -1,0 +1,25 @@
+.photo-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid $black-30;
+
+  &__preview {
+    object-fit: cover;
+    width: 100%;
+    height: 260px;
+  }
+  &__icon-btn {
+
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 15px;
+  }
+}
+.photo-item__btn {
+  width: 24px;
+  height: 24px;
+}

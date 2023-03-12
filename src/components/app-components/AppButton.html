@@ -1,0 +1,12 @@
+<button class="app-button @@mode">
+    @@if ( context.icon) {
+        <svg class="photo-item__btn">
+            <use xlink:href=#@@icon></use>
+        </svg>
+    }
+    @@if ( context.label) {
+        <span class="app-button__label">@@label</span>
+    }
+
+
+</button>

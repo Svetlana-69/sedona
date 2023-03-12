@@ -3,23 +3,32 @@
     <ul class="social">
         <li class="social__item">
             <a class="social__item__link" href="https://twitter.com/">
-                <svg width="24" height="24">
-                    <use xlink:href=#twitter></use>
-                </svg>
+                @@include(
+                './app-components/AppButton.html',
+                {
+                "icon": "twitter",
+                "mode": "small"
+                })
             </a>
         </li>
         <li class="social__item">
             <a class="social__item__link" href="https://ru-ru.facebook.com/">
-                <svg width="24" height="24">
-                    <use xlink:href=#facebook></use>
-                </svg>
+                @@include(
+                './app-components/AppButton.html',
+                {
+                "icon": "facebook",
+                "mode": "small"
+                })
             </a>
         </li>
         <li class="social__item">
             <a class="social__item__link" href="https://www.youtube.com/">
-                <svg width="24" height="24">
-                    <use xlink:href=#youtube></use>
-                </svg>
+                @@include(
+                './app-components/AppButton.html',
+                {
+                "icon": "youtube",
+                "mode": "small"
+                })
             </a>
         </li>
     </ul>

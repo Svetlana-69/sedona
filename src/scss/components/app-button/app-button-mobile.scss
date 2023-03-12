@@ -1,0 +1,39 @@
+.app-button {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: $primary-30;
+  height: 55px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-width: 55px;
+}
+.app-button:hover {
+  background: $primary-50;
+}
+.app-button:active {
+  background: $primary-70;
+  color: $primary-30;
+}
+
+.app-button.small {
+  height: 45px;
+  padding: 0 10px;
+  min-width: 45px;
+}
+.app-button.flat {
+  background: initial;
+  color: $black;
+}
+.app-button.flat:hover {
+  color: $primary-30;
+}
+.app-button.flat:active {
+  color: $black-30;
+}

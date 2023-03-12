@@ -1,3 +1,39 @@
-<div class="gallery-page">
-    вторая страница галереи
+<div class="gallery-page" style="height: 100%">
+
+    @@include(
+    '../app-components/PhotoCard.html',
+    {
+    "img": "photo-1-desktop.jpg",
+    "title": "неродные просторы",
+    "description": "Автор фото: Борис",
+    "count": "1350"
+    })
+
+    @@include(
+    '../app-components/PhotoCard.html',
+    {
+    "img": "photo-2-desktop.jpg",
+    "title": "Местная растительность",
+    "description": "Автор фото: Сергей",
+    "count": "143"
+    })
+
+    @@include(
+    '../app-components/PhotoCard.html',
+    {
+    "img": "photo-3-desktop.jpg",
+    "title": "Дорога на север",
+    "description": "Автор фото: Петр",
+    "count": "96"
+    })
+
+    @@include(
+    '../app-components/PhotoCard.html',
+    {
+    "img": "photo-4-desktop.jpg",
+    "title": "Мост дьявола",
+    "description": "Автор фото: Антон",
+    "count": "254"
+    })
+
 </div>
