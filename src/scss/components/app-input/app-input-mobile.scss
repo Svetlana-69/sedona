@@ -1,0 +1,86 @@
+.app-input {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  gap: 10px;
+  &__required {
+    color: red;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 100%;
+    width: 55px;
+    background: $black-70;
+    right: 0;
+    svg {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  &__control-wrapper {
+    display: flex;
+    height: 55px;
+    align-items: center;
+  }
+  &__control {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    background: $black-50;
+    border: 3px solid transparent;
+    border-right: none;
+    font-weight: bold;
+    color: $black;
+
+
+  }
+  &__label {
+    text-transform: uppercase;
+    font-family: Mynerve;
+
+    &__required {
+      color: red;
+    }
+  }
+  &__icon-wrapper {
+    height: 100%;
+    border: 3px solid transparent;
+    border-left: none;
+    box-sizing: content-box;
+  }
+  &__control:focus {
+    outline: none;
+    border: 3px solid $black-30;
+    border-right: none;
+    background: $white;
+  }
+  &__control:focus+.app-input__icon-wrapper {
+    border: 3px solid $black-30;
+    border-left: none;
+    box-sizing: border-box;
+  }
+}
+.app-input__control:hover {
+  background: $black-30;
+
+}
+.app-input__control::-webkit-input-placeholder {
+  color: $black;
+}
+
+.app-input.column-mode {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.app-input.row-mode {
+  flex-direction: row;
+  align-items: center;
+}
+//.app-input__required {
+//  color: red;
+//}

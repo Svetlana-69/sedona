@@ -1,0 +1,27 @@
+<label class="app-input @@mode">
+    @@if ( context.label ) {
+        <span class="app-input__label">@@label
+            @@if ( context.required === true) {
+            <span class="app-input__required">*</span>:
+            }
+        </span>
+    }
+    <div class="app-input__control-wrapper">
+        <input class="app-input__control" type=@@type name=@@name placeholder="@@placeholder"/>
+        <div class="app-input__icon-wrapper">
+            @@if ( context.icon ) {
+                <div class="app-input__icon">
+                    <svg><use xlink:href=#@@icon></use></svg>
+                </div>
+            }
+        </div>
+    </div>
+
+</label>
+
+
+
+
+
+
+
