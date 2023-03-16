@@ -1,23 +1,20 @@
 <div class="home-page">
-    <div class="title">
-        <h2>welcome</h2>
-        <span class="discription">—  to the gorgeous  —</span>
-        <h1 class="main-title">sedona</h1>
-        <p class="depiction">"Because the grand canyon fabulous"</p>
-    </div>
-    <section class="back">
-        <div class="image-wrapper">
-            <img class="intro" src="../../files/img/intro-triangle.png"/>
-        </div>
 
-        @@include(
-        '../app-components/AdvantageItem.html',
-        {
-        "title": "СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!",
-        "description": "Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!"
-        })
-        <img class="strip" src="../../files/img/white.png"/>
-    </section>
+    @@include(
+    '../app-components/SubHeader.html',
+    {
+    "currentPage": "homePage"
+
+    })
+
+
+
+    @@include(
+    '../app-components/AdvantageItem.html',
+    {
+    "title": "СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!",
+    "description": "Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!"
+    })
 
    <section class="photo">
         @@include(

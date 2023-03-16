@@ -1,9 +1,6 @@
 .gallery-page {
   display: flex;
   flex-direction: column;
-
-
-
   &__list {
     background-image: url("../../files/img/back-desktop.jpg");
     width: 100%;
@@ -17,10 +14,7 @@
     font-size: 28px;
     padding-top: 35px;
     text-transform: uppercase;
-
-
   }
-
   &__item {
     display: flex;
     flex-direction: column;
@@ -31,20 +25,11 @@
     text-transform: uppercase;
   }
 }
+
 .icon-wrapper
 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.image-wrapper {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  top: 5px;
-}
-.gallery-page__description {
-  font-size: 20px;
-}
+

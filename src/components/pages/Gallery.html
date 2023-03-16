@@ -1,15 +1,12 @@
 <div class="gallery-page" style="height: 100%">
-    <div class="gallery-page__list">
-        <h1 class="gallery-page_title">Sedona</h1>
-        <div class="image-wrapper">
-            <img src="../../files/img/intro-triangle.png"/>
-        </div>
-    </div>
+    @@include('../app-components/SubHeader.html')
     <div class="gallery-page__item">
-        <span class="gallery-page__description">Фото и видео</span>
-        <p class="gallery-page__">
-                Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "title": "Фото и видео",
+        "description": "Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.",
+        })
     </div>
 
 
