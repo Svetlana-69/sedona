@@ -13,6 +13,10 @@
   justify-content: center;
   gap: 15px;
   min-width: 55px;
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 .app-button:hover {
   background: $primary-50;
@@ -36,4 +40,10 @@
 }
 .app-button.flat:active {
   color: $black-30;
+}
+.app-button.dense {
+  height: fit-content;
+  min-width: 0;
+  padding: 0;
+
 }

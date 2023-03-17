@@ -1,0 +1,16 @@
+@media (min-width: $screen-tablet) {
+  .photo-item {
+    position: relative;
+    .app-button.flat {
+      color: $white;
+    }
+    .wrapper {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      color: #e5e5e5;
+      background: $black-70;
+
+    }
+  }
+}
