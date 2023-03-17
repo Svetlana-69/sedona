@@ -1,9 +1,19 @@
 @media (min-width: $screen-mobile) {
-  .advantage-item h2 {
-    font-weight: bold;
-  }
-  .intro {
-    top: -70px;
-    height: 70px;
+  .photo-list {
+    flex-direction: row;
+    gap: 0;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    .photo-item {
+      width: 50%;
+      border: none;
+      gap: 0;
+    }
+    .photo-item:first-child {
+      width: 100%;
+      .photo-item__preview {
+        height: 400px;
+      }
+    }
   }
 }

@@ -26,10 +26,19 @@
   }
 }
 
-.icon-wrapper
-{
+
+.photo-list {
+  padding: 20px 0;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 20px;
+  .photo-item {
+
+  }
 }
+.gallery-page__item-description {
+  padding: 0 40px;
+
+}
+
 

@@ -1,15 +1,23 @@
 <div class="photo-item">
     <img src=../../files/img/@@img class="photo-item__preview"/>
-    <h2 class="photo-item__title">@@title</h2>
-    <p class="photo-item__description">@@description</p>
-    <div class="icon-wrapper">
-        <button class="icon-btn">
-            <svg class="photo-item__btn">
-                <use xlink:href=#like></use>
-            </svg>
-        </button>
-        <span class="photo-item__count">@@count</span>
+    <div class="wrapper">
+        <div class="photo-item__wrapper">
+            <h2 class="photo-item__title">@@title</h2>
+            <p class="photo-item__description">@@description</p>
+        </div>
+
+        <div class="photo-item__like">
+            @@include(
+            './AppButton.html',
+            {
+            "icon": "like",
+            "mode": "flat dense"
+
+            })
+            <span class="photo-item__count">@@count</span>
+        </div>
     </div>
+
 
 
 </div>

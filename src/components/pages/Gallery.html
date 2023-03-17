@@ -8,47 +8,56 @@
         "description": "Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.",
         })
     </div>
+    <div class="photo-list">
+        @@include(
+        '../app-components/PhotoCard.html',
+        {
+        "img": "photo-1-desktop.jpg",
+        "title": "неродные просторы",
+        "description": "Автор фото: Борис",
+        "count": "1350"
+        })
 
+        @@include(
+        '../app-components/PhotoCard.html',
+        {
+        "img": "photo-2-desktop.jpg",
+        "title": "Местная растительность",
+        "description": "Автор фото: Сергей",
+        "count": "143"
+        })
 
+        @@include(
+        '../app-components/PhotoCard.html',
+        {
+        "img": "photo-3-desktop.jpg",
+        "title": "Дорога на север",
+        "description": "Автор фото: Петр",
+        "count": "96"
+        })
 
-
-
-
-
+        @@include(
+        '../app-components/PhotoCard.html',
+        {
+        "img": "photo-4-desktop.jpg",
+        "title": "Мост дьявола",
+        "description": "Автор фото: Антон",
+        "count": "254"
+        })
+    </div>
+    <div class="gallery-page__item-description">
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "title": "Все еще сомневаетесь?",
+        "description": "Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!",
+        })
+    </div>
     @@include(
-    '../app-components/PhotoCard.html',
+    '../app-components/AppButton.html',
     {
-    "img": "photo-1-desktop.jpg",
-    "title": "неродные просторы",
-    "description": "Автор фото: Борис",
-    "count": "1350"
-    })
-
-    @@include(
-    '../app-components/PhotoCard.html',
-    {
-    "img": "photo-2-desktop.jpg",
-    "title": "Местная растительность",
-    "description": "Автор фото: Сергей",
-    "count": "143"
-    })
-
-    @@include(
-    '../app-components/PhotoCard.html',
-    {
-    "img": "photo-3-desktop.jpg",
-    "title": "Дорога на север",
-    "description": "Автор фото: Петр",
-    "count": "96"
-    })
-
-    @@include(
-    '../app-components/PhotoCard.html',
-    {
-    "img": "photo-4-desktop.jpg",
-    "title": "Мост дьявола",
-    "description": "Автор фото: Антон",
-    "count": "254"
+    "icon": "cc",
+    "mode": "flat dense"
     })
 
 </div>
