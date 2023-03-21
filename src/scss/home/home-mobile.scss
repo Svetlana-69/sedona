@@ -79,5 +79,10 @@
     align-items: flex-start;
     text-align: left;
   }
+.app-player__time-line::-webkit-scrollbar:horizontal {
+  border: 1px solid darkgoldenrod;
+  height: 100px;
 
+
+}
 }

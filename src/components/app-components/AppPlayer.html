@@ -1,0 +1,55 @@
+<div class="app-player">
+    <div class="app-player__video">
+        <img class="video" src="../../files/img/video-desktop.jpg">
+    </div>
+    <div class="app-player__panel">
+        <div class="app-player__time-line">
+            @@include(
+            './AppSlider.html',
+            {
+
+            })
+        </div>
+
+
+
+        <div class="app-player__action">
+
+                @@include(
+                './AppButton.html',
+                {
+                "icon": "refresh",
+                "mode": "flat dense"
+                })
+
+            @@include(
+            './AppSlider.html',
+            {
+
+            })
+
+
+                @@include(
+                '../app-components/AppButton.html',
+                {
+                "icon": "cc",
+                "mode": "flat dense"
+                })
+
+
+
+
+
+                @@include(
+                '../app-components/AppButton.html',
+                {
+                "icon": "fullscreen",
+                "mode": "flat dense"
+                })
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

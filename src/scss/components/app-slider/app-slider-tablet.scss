@@ -1,0 +1,22 @@
+@media (min-width: $screen-mobile) {
+  .app-player {
+    margin: 0 60px;
+    &__action {
+      grid-template-columns: 50px 1fr 50px 50px;
+      height: 90px;
+      position: relative;
+      bottom: 60px;
+      background: $black-90;
+      .app-button {
+        color: $white;
+      }
+
+    }
+    &__panel {
+      padding: 0;
+    }
+    &__time-line {
+      display: none;
+    }
+  }
+}
