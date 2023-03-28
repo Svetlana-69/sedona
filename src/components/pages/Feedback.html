@@ -1,3 +1,67 @@
 <div class="feedback-page">
-    третья страница форма обратной связи
+
+
+
+    <div class="app-toggle__wrapper">
+        <h2 class="app-toggle__header">Ваше Общее впечатление:</h2>
+    @@include(
+    '../app-components/AppToggle.html',
+    {
+    "label": "Скорее положительное",
+    "type": "radio",
+    "name": "radio1"
+
+    })
+
+    @@include(
+    '../app-components/AppToggle.html',
+    {
+    "label": "Скорее отрицательное",
+    "type": "radio",
+    "name": "radio1"
+
+    })
+
+    @@include(
+    '../app-components/AppToggle.html',
+    {
+    "label": "Затрудняюсь ответить",
+    "type": "radio",
+    "name": "radio1"
+
+    })
+    </div>
+    <div class="app-toggle__wrapper">
+        <h2 class="app-toggle__header">посещенные достопримечательности:</h2>
+        @@include(
+        '../app-components/AppToggle.html',
+        {
+        "label": "Мост Дьявола",
+        "type": "checkbox"
+
+        })
+
+        @@include(
+        '../app-components/AppToggle.html',
+        {
+        "label": "Гора-Колокол",
+        "type": "checkbox"
+
+        })
+
+        @@include(
+        '../app-components/AppToggle.html',
+        {
+        "label": "Слайд-парк",
+        "type": "checkbox"
+        })
+
+        @@include(
+        '../app-components/AppToggle.html',
+        {
+        "label": "Красные скалы",
+        "type": "checkbox"
+
+        })
+    </div>
 </div>
