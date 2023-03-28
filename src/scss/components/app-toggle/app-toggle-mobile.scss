@@ -1,0 +1,72 @@
+.app-toggle {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  &__control {
+    width: 50px;
+    height: 50px;
+    background: $black-50;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__control.radio {
+    border-radius: 50px;
+  }
+  &__control.radio::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: $white;
+    border-radius: 50px;
+  }
+
+  &__input:checked + &__control.checkbox::after {
+    transform: rotate(-45deg) scale(1);
+
+
+  }
+  &__control.checkbox::after {
+    content: '';
+    position: absolute;
+    transform: rotate(-45deg) scale(0);
+    transition: 0.2s;
+    border-bottom: 6px solid $black;
+    border-left: 6px solid $black;
+    width: 20px;
+    height: 12px;
+  }
+
+  &__control.radio::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: $black;
+    position: absolute;
+    border-radius: 50px;
+    transform: scale(0);
+    transition: 0.3s;
+  }
+  &__control:hover {
+    background: $black-30;
+  }
+  &__control:active {
+    background: $black-70;
+  }
+  &__input:checked + &__control.radio::after {
+    transform: scale(1);
+  }
+  &__input {
+    display: none;
+  }
+  &__wrapper {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-top: 1px solid $black-30;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
