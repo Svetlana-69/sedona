@@ -1,5 +1,73 @@
 <div class="feedback-page">
+    <div class="feedback-page__item">
+        @@include(
+        '../app-components/AdvantageItem.html',
+        {
+        "title": "Оставьте свой отзыв",
+        "description": "Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях",
+        })
+    </div>
+    <div class="app-toggle__wrapper">
+        <h2 class="app-toggle__header">Представьтесь:</h2>
+        @@include(
+        '../app-components/AppInput.html',
+        {
+        "label": "Имя",
+        "placeholder": "Введите имя",
+        "name": "name",
+        "required": true,
+        "mode": "row-mode"
+        })
 
+        @@include(
+        '../app-components/AppInput.html',
+        {
+        "label": "Фамилия",
+        "placeholder": "Введите фамилию",
+        "name": "surname",
+        "required": true,
+        "mode": "row-mode"
+        })
+
+        @@include(
+        '../app-components/AppInput.html',
+        {
+        "label": "Отчество",
+        "placeholder": "Введите отчество",
+        "name": "surname",
+        "mode": "row-mode"
+        })
+    </div>
+
+    <div class="app-toggle__wrapper">
+        <h2 class="app-toggle__header">Контактная информация:</h2>
+        <div class="app-toggle__registration">
+            @@include(
+            '../app-components/AppInput.html',
+            {
+            "label": "контактный телефон",
+            "placeholder": "Введите телофон",
+            "type": "number",
+            "name": "phone",
+            "icon": "phone",
+            "required": true,
+            "mode": "column-mode"
+            })
+
+            @@include(
+            '../app-components/AppInput.html',
+            {
+            "label": "электронная почта",
+            "placeholder": "Введите e-mail",
+            "type": "number",
+            "name": "mail",
+            "icon": "envelope",
+            "required": true,
+            "mode": "column-mode"
+            })
+        </div>
+
+    </div>
 
 
     <div class="app-toggle__wrapper">
