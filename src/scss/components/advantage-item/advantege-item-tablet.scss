@@ -1,6 +1,10 @@
 @media (min-width: $screen-mobile) {
   .advantage-item {
-
     padding: 33px 120px;
+  }
+  .app-submit {
+    &__input {
+      display: flex;
+    }
   }
 }

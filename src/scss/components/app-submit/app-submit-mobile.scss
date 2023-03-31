@@ -1,0 +1,33 @@
+.app-submit{
+
+  &__text {
+    width: 100%;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 18px;
+    font-family: PTSans;
+    background: $black-50;
+    border: none;
+    resize: none;
+  }
+  &__input {
+    padding: 20px 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background: $primary-30;
+    color: $white;
+    margin-top: 40px;
+  }
+  &__input:hover {
+    background: $primary-50;
+  }
+
+}
+
+textarea::-webkit-input-placeholder {
+  color: $black;
+
+
+}

@@ -1,4 +1,5 @@
 <div class="feedback-page">
+    @@include('../app-components/SubHeader.html')
     <div class="feedback-page__item">
         @@include(
         '../app-components/AdvantageItem.html',
@@ -7,129 +8,143 @@
         "description": "Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях",
         })
     </div>
-    <div class="app-toggle__wrapper">
-        <h2 class="app-toggle__header">Представьтесь:</h2>
-        @@include(
-        '../app-components/AppInput.html',
-        {
-        "label": "Имя",
-        "placeholder": "Введите имя",
-        "name": "name",
-        "required": true,
-        "mode": "row-mode"
-        })
-
-        @@include(
-        '../app-components/AppInput.html',
-        {
-        "label": "Фамилия",
-        "placeholder": "Введите фамилию",
-        "name": "surname",
-        "required": true,
-        "mode": "row-mode"
-        })
-
-        @@include(
-        '../app-components/AppInput.html',
-        {
-        "label": "Отчество",
-        "placeholder": "Введите отчество",
-        "name": "surname",
-        "mode": "row-mode"
-        })
-    </div>
-
-    <div class="app-toggle__wrapper">
-        <h2 class="app-toggle__header">Контактная информация:</h2>
-        <div class="app-toggle__registration">
+    <div class="feedback-page__form-wrapper">
+        <div class="app-toggle__wrapper user-info">
+            <h2 class="app-toggle__header">Представьтесь:</h2>
             @@include(
             '../app-components/AppInput.html',
             {
-            "label": "контактный телефон",
-            "placeholder": "Введите телофон",
-            "type": "number",
-            "name": "phone",
-            "icon": "phone",
+            "label": "Имя",
+            "placeholder": "Введите имя",
+            "name": "name",
             "required": true,
-            "mode": "column-mode"
+            "mode": "row-mode"
             })
 
             @@include(
             '../app-components/AppInput.html',
             {
-            "label": "электронная почта",
-            "placeholder": "Введите e-mail",
-            "type": "number",
-            "name": "mail",
-            "icon": "envelope",
+            "label": "Фамилия",
+            "placeholder": "Введите фамилию",
+            "name": "surname",
             "required": true,
-            "mode": "column-mode"
+            "mode": "row-mode"
+            })
+
+            @@include(
+            '../app-components/AppInput.html',
+            {
+            "label": "Отчество",
+            "placeholder": "Введите отчество",
+            "name": "surname",
+            "mode": "row-mode"
             })
         </div>
 
+        <div class="app-toggle__wrapper user-contact">
+            <h2 class="app-toggle__header">Контактная информация:</h2>
+
+            <div class="user-contact__wrapper">
+                @@include(
+                '../app-components/AppInput.html',
+                {
+                "label": "контактный телефон",
+                "placeholder": "Введите телофон",
+                "type": "number",
+                "name": "phone",
+                "icon": "phone",
+                "required": true,
+                "mode": "column-mode"
+                })
+
+                @@include(
+                '../app-components/AppInput.html',
+                {
+                "label": "электронная почта",
+                "placeholder": "Введите e-mail",
+                "name": "mail",
+                "icon": "envelope",
+                "required": true,
+                "mode": "column-mode"
+                })
+
+            </div>
+        </div>
+        <div class="app-toggle__wrapper user-review">
+            <h2 class="app-toggle__header">Ваше Общее впечатление:</h2>
+            @@include(
+            '../app-components/AppToggle.html',
+            {
+            "label": "Скорее положительное",
+            "type": "radio",
+            "name": "radio1"
+
+            })
+
+            @@include(
+            '../app-components/AppToggle.html',
+            {
+            "label": "Скорее отрицательное",
+            "type": "radio",
+            "name": "radio1"
+
+            })
+
+            @@include(
+            '../app-components/AppToggle.html',
+            {
+            "label": "Затрудняюсь ответить",
+            "type": "radio",
+            "name": "radio1"
+
+            })
+        </div>
+        <div class="app-toggle__wrapper user-description">
+            <h2 class="app-toggle__header">посещенные достопримечательности:</h2>
+
+            <div class="user-description__wrapper">
+                @@include(
+                '../app-components/AppToggle.html',
+                {
+                "label": "Мост Дьявола",
+                "type": "checkbox"
+
+                })
+
+                @@include(
+                '../app-components/AppToggle.html',
+                {
+                "label": "Гора-Колокол",
+                "type": "checkbox"
+
+                })
+
+                @@include(
+                '../app-components/AppToggle.html',
+                {
+                "label": "Слайд-парк",
+                "type": "checkbox"
+                })
+
+                @@include(
+                '../app-components/AppToggle.html',
+                {
+                "label": "Красные скалы",
+                "type": "checkbox"
+
+                })
+            </div>
+
+        </div>
     </div>
 
-
     <div class="app-toggle__wrapper">
-        <h2 class="app-toggle__header">Ваше Общее впечатление:</h2>
+        <h2 class="app-toggle__header user-comment">Опишите свои эмоции:</h2>
     @@include(
-    '../app-components/AppToggle.html',
+    '../app-components/AppSubmit.html',
     {
-    "label": "Скорее положительное",
-    "type": "radio",
-    "name": "radio1"
+    "type": "submit"
 
     })
-
-    @@include(
-    '../app-components/AppToggle.html',
-    {
-    "label": "Скорее отрицательное",
-    "type": "radio",
-    "name": "radio1"
-
-    })
-
-    @@include(
-    '../app-components/AppToggle.html',
-    {
-    "label": "Затрудняюсь ответить",
-    "type": "radio",
-    "name": "radio1"
-
-    })
-    </div>
-    <div class="app-toggle__wrapper">
-        <h2 class="app-toggle__header">посещенные достопримечательности:</h2>
-        @@include(
-        '../app-components/AppToggle.html',
-        {
-        "label": "Мост Дьявола",
-        "type": "checkbox"
-
-        })
-
-        @@include(
-        '../app-components/AppToggle.html',
-        {
-        "label": "Гора-Колокол",
-        "type": "checkbox"
-
-        })
-
-        @@include(
-        '../app-components/AppToggle.html',
-        {
-        "label": "Слайд-парк",
-        "type": "checkbox"
-        })
-
-        @@include(
-        '../app-components/AppToggle.html',
-        {
-        "label": "Красные скалы",
-        "type": "checkbox"
-
-        })
     </div>
 </div>

@@ -1,7 +1,7 @@
 @media (min-width: $screen-tablet){
   .advantage-item {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
 
   }
 }
