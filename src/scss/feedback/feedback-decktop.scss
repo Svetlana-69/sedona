@@ -1,0 +1,26 @@
+@media (min-width: $screen-tablet) {
+  .feedback-page{
+    .user-description {
+      &__wrapper {
+        display: flex;
+      }
+    }
+    .user-contact {
+      &__wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 30px;
+        column-gap: 70px;
+        padding-top: 20px;
+    }
+
+    }
+    .app-toggle__wrapper{
+      padding: 20px 120px;
+      .user-comment {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+}
